@@ -1,0 +1,18 @@
+<h2 class="radioClass">Current Openings : </h2>
+
+<input name='options' type='radio' value="All"
+       [(ngModel)]="selectedRadioButtonValue"
+       (change)="onRadioButtonSelectionChange()">
+<span class="radioClass">{{"All(" + all + ")"}}</span>
+
+<input name="options" type="radio" value="full_time"
+       [(ngModel)]="selectedRadioButtonValue"
+       (change)="onRadioButtonSelectionChange()">
+<span class="radioClass">{{"FullTime(" + full_time + ")"}}</span>
+
+<input name="options" type="radio" value="part_time"
+       [(ngModel)]="selectedRadioButtonValue"
+       (change)="onRadioButtonSelectionChange()">
+
+<span class="radioClass">{{"PartTime(" + part_time + ")"}}</span>
+

@@ -1,0 +1,65 @@
+
+<div class="container-fluid top_container">
+  <div class="jumbotron p-3 p-md-5 text-black">
+    <div class="col-md-12 px-0">
+      <h1 class="display-4 font-italic">A child-focused approach to childhood learning</h1>
+      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row image_content">
+      <div class="col-md-8 col-sm-12"><img src="../../assets/image2.jpg" /></div>
+      <div class="col-md-4 col-sm-12">
+        <h2>Our Mission</h2>
+        <p>To make a positive difference in the lives of our children, their families, and the communities we serve.To make a positive difference in the lives of our children, their families, and the communities we serve.To make a positive difference in the lives of our children, their families, and the communities we serve. </p>
+      </div>
+    </div>
+    <div class="row image_content">
+      <div class="col-md-4 col-sm-12">
+        <h2>Our Vission</h2>
+        <p>To make a positive difference in the lives of our children, their families, and the communities we serve.To make a positive difference in the lives of our children, their families, and the communities we serve.To make a positive difference in the lives of our children, their families, and the communities we serve. </p>
+      </div>
+
+      <div class="col-md-8 col-sm-12">
+        <img src="../../assets/image3.jpg" />
+      </div>
+    </div>
+    <div class="row image_content our_program">
+
+      <div class="col-md-4 col-sm-12">
+        <h2>Our Program</h2><ul>
+          <li *ngFor="let program of programs"
+              [class.selected]="program === selectedProgram"
+              (click)="onSelect(program)">
+            <span class="badge">{{program.name}}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-8 col-sm-12">
+        <div *ngIf="selectedProgram">
+
+          <h4>{{selectedProgram.name | uppercase}} Details</h4>
+          <div>{{selectedProgram.desc}}</div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+ 
+  <div class="row busdetails">
+    <div class="col-md-12"><h2>Bus Details</h2></div>
+    <marquee behavior="scroll" direction="right"><img src="../../assets/bus.png" /></marquee>
+
+    <div class="col-md-3"><h5>#8433 southside Blvd, <br />Jacksonvile</h5></div>
+    <div class="col-md-3"><h5>#3423 southside Blvd, <br />Jacksonvile</h5></div>
+
+    <div class="col-md-3"><h5>#3432 pkwy Blvd, <br />Jacksonvile</h5></div>
+    <div class="col-md-3"><h5>#2343 Beach Blvd, <br />Jacksonvile</h5></div>
+
+
+
+  </div>
+  </div>

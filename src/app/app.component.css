@@ -1,0 +1,8 @@
+footer{
+  background: black;
+  padding:10px 0px;
+}
+footer .text-muted
+{
+    color: white !important;
+}

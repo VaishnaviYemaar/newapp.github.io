@@ -1,0 +1,122 @@
+/* You can add global styles to this file, and also import other style files */
+.bg-dark
+{
+    background-color:deeppink !important;
+}
+.image_content {
+    margin:70px 0px;
+}
+.image_content .col-md-4 h2{
+    color:crimson;
+}
+.image_content .col-md-4 p {
+}
+  .image_content .btn.btn-secondary
+  {
+      background-color:crimson;
+  }
+.our_program
+{
+
+}
+  .our_program li {
+  
+    list-style: none;
+    cursor: pointer;
+    background: darkmagenta;
+    margin: 15px 0px;
+    padding: 10px 10px;
+  }
+  .our_program li span{
+    font-size:100%;
+    color:white;
+  }
+.our_program .col-md-8 {
+  margin: 50px 0px;
+}
+  .our_program h1, .busdetails h1 {
+    color: darkmagenta;
+  }
+.our_program h4{
+    color:deeppink;
+
+}
+.busdetails h2 , .career h2 {
+    color:crimson;
+}
+.busdetails li{
+    list-style:none;
+    margin:50px;
+    color:darkolivegreen;
+}
+
+.career app-job-type input{
+    margin-left: 20px;
+    margin-right:10px;
+}
+.career tr{
+    margin:20px 0px;
+}
+.career td {
+  padding: 20px;
+}
+.career th {
+  padding: 20px;
+}
+.contact .row{
+    margin:20px;
+}
+  .contact .row input, .contact .row textarea {
+    width: 70%;
+  }
+.nav-link.active-link
+{
+    color:white !important;
+    
+}
+.col-sm-12 img{
+width:100%;
+height: 100%;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.our_program li.selected, .our_program li:hover{
+    background:magenta;
+}
+.ng-invalid.ng-touched{
+    border-color:red;
+}
+form.ng-valid .forsubmit{
+    background:green;
+}
+.jumbotron {
+  background: slateblue;
+  color: white;
+}
+.top_container
+{
+    margin-top:90px;
+}
+.busdetails
+{
+    margin-bottom:50px;
+}
+
+form.container{
+    margin-bottom:80px;
+}
+.other_location h2 {
+  color: crimson;
+}
+.other_location h4 {
+  color: burlywood;
+}
+.ad-banner-example {
+    background-color:chocolate;
+    padding:25px;
+}
+  .ad-banner-example h4, .ad-banner-example h3{
+      color:white;
+  }

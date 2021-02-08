@@ -1,0 +1,50 @@
+<div class="container-fluid about_us career top_container">
+  <div class="jumbotron p-3 p-md-5 text-black">
+    <div class="col-md-12 px-0">
+      <h1 class="display-4 font-italic">A child-focused approach to childhood learning</h1>
+      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <h3>Reach us Immediately to apply!!!</h3>
+        <app-job-type [all]="getTotalJobsCount()"
+                      [full_time]="getFullTimeJobsCount()"
+                      [part_time]="getPartTimeJobsCount()" (countRadioButtonSelectionChanged)="onJobCountRadioButtonChange($event)"></app-job-type>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th>Code</th>
+
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let job of jobs;">
+              <tr *ngIf="selectedJobCountRadioButton=='All' ||
+                       selectedJobCountRadioButton==job.job_type">
+                <td>{{job.code | uppercase}}</td>
+
+                <td>{{job.name | JobType:job.job_type }}</td>
+
+                <td>{{job.description}}</td>
+              </tr>
+            </ng-container>
+            <tr *ngIf="!jobs || jobs.length==0">
+              <td colspan="5">
+                No Jobs to display
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="col-md-4 col-sm-12"><app-ad-banner [ads]="ads"></app-ad-banner></div>
+
+    </div>
+    </div>
+  </div>

@@ -1,0 +1,85 @@
+<div class="container-fluid contact top_container">
+  <div class="jumbotron p-3 p-md-5 text-black">
+    <div class="col-md-12 px-0">
+      <h1 class="display-4 font-italic">Reach us in our office location</h1>
+      <p class="lead my-3">Our Deerfield Beach office is where we help ensure our continued excellence in daycare and early childhood education—by shaping our innovative curriculum, managing our steady growth and searching for the right franchise and real estate partners.</p>
+
+    </div>
+  </div>
+  <div class="container">
+  <div class="row image_content">
+    <div class="col-md-4 col-sm-12"><img src="../../assets/office_location.png" width="400" height="400"/></div>
+
+    <div class="col-md-4 col-sm-12">
+      <h2>Our Office Location</h2>
+<p>#3433 Southside Blvd<br />Zip: #342343<br />Contact No:+91 334343234 </p>
+    </div>
+
+    <div class="col-md-4 col-sm-12"><app-ad-banner [ads]="ads"></app-ad-banner></div>
+  </div>
+    </div>
+
+
+
+  <form class="container" [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+    <div class="row">
+      <div class="col-md-4">
+        <span>Name:</span>
+      </div>
+      <div class="col-md-8">
+        <input type="text" class="fortextbox" name="contactname" placeholder="name"
+               formControlName="contactname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <span>EmailId:</span>
+      </div>
+      <div class="col-md-8">
+        <input type="text" class="fortextbox" name="emailid" placeholder="emailid"
+               formControlName="emailid">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <span>Message:</span>
+      </div>
+      <div class="col-md-8">
+        <textarea></textarea>
+      </div>
+    </div>
+    <br />
+    <!--<input type="password" class="fortextbox" name="passwd"
+  placeholder="passwd" formControlName="passwd">-->
+    <br />
+    <input type="submit" [disabled]="!formdata.valid" class="forsubmit btn btn-success"
+           value="Log In" (click)="onClickMe()">
+
+    <br />
+    <br />
+    <h5>{{clickMessage}}</h5>
+  </form>
+  <div class="row other_location">
+    <div class="col-md-12"><h2>Other Locations</h2></div>
+    <div class="col-md-4">
+
+      <h4>California</h4>
+      <p>#3433 Southside Blvd<br />Zip: #342343<br />Contact No:+91 334343234 </p>
+    </div>
+
+    <div class="col-md-4">
+      <h4>Orlando</h4>
+      <p>34,second street<br />Zip: #342343<br />Contact No:+91 334343234 </p>
+    </div>
+
+    <div class="col-md-4">
+      <h4>Cannada</h4>
+      <p>34,second street<br />Zip: #342343<br />Contact No:+1 334343234 </p>
+    </div>
+  </div>
+
+
+  </div>
+
+   
+  
